@@ -1,17 +1,18 @@
-# lsb-release [![Build Status](https://secure.travis-ci.org/mmalecki/lsb-release.png)](http://travis-ci.org/mmalecki/lsb-release)
+# lsb-release [![Build Status](https://secure.travis-ci.org/bizzby/lsb-release.png)](http://travis-ci.org/mmalecki/lsb-release)
 `lsb-release` is a parser for `lsb_release` command output.
+
+This version has been syncified
 
 ## Installation
 
-    npm install lsb-release
+    npm install bizzby-lsb-release
 
 ## Usage
 ```js
-var lsbRelease = require('lsb-release');
+var lsbRelease = require('bizzby-lsb-release');
 
-lsbRelease(function (_, data) {
-  console.dir(data);
-});
+data = lsbRelease()
+console.dir(data)
 ```
 
 Will output something similar to:
@@ -22,4 +23,10 @@ Will output something similar to:
   description: 'Fedora release 14 (Laughlin)',
   release: '14',
   codename: 'Laughlin' }
+```
+
+or 
+
+```
+'null'
 ```

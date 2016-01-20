@@ -1,14 +1,14 @@
 {
-  "name": "lsb-release",
+  "name": "bizzby-lsb-release",
   "description": "Parser for `lsb_release` command output",
   "keywords": ["lsb_release", "lsb", "linux", "os"],
   "author": "Maciej Małecki <me@mmalecki.com>",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "./lib/lsb-release",
-  "devDependencies": {
-    "assert-called": "0.0.x"
-  },
   "scripts": {
     "test": "node test/from-file-test.js && node test/from-command-test.js"
+  },
+  "engines": {
+    "node": "^5.1.1"
   }
 }
